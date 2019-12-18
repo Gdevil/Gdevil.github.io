@@ -1,0 +1,1 @@
+```<video src="media/v.mp4" id="video" poster="images/video.jpg" preload width="100%" controls webkit-playsinline></video>```
