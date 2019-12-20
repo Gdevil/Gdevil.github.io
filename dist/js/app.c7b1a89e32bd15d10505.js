@@ -94,7 +94,7 @@ Alpha*255再转换成16进制即可
 $("input").val(2333)
 //触发一下该input的input事件
 $("input")[0].dispatchEvent(new Event('input'))
-```},"4Uwr":function(e,t,i){e.exports=i.p+"static/img/logo.9a14e13.jpg"},"4sNM":function(e,t){```function openWindow(){
+```},"4Uwr":function(e,t,i){e.exports=i.p+"img/logo.9a14e13.jpg"},"4sNM":function(e,t){```function openWindow(){
     var url="index.html?name=name";
     window.open(url,'_self');
 }
@@ -1047,7 +1047,7 @@ png和svg大小要一样大
 
 
 切图的时候要贴着内容的高和宽
-```},IjBW:function(e,t,i){e.exports=i.p+"static/img/preview.d44e00a.jpg"},Itf0:function(e,t){```<input type="text" name="" onkeypress="return check()">
+```},IjBW:function(e,t,i){e.exports=i.p+"img/preview.d44e00a.jpg"},Itf0:function(e,t){```<input type="text" name="" onkeypress="return check()">
 
 
 
@@ -1705,7 +1705,7 @@ http://chat32.live800.com/live800/chatClient/chatbox.jsp?companyID=668243&config
     position: relative;
     padding-bottom: 30px;
 }
-```},dQUM:function(e,t){```$("body").wrapInner("<div id='all'></div>")```},"dZ/S":function(e,t,i){e.exports=i.p+"static/img/bg.79fb44b.jpg"},drtw:function(e,t){```
+```},dQUM:function(e,t){```$("body").wrapInner("<div id='all'></div>")```},"dZ/S":function(e,t,i){e.exports=i.p+"img/bg.79fb44b.jpg"},drtw:function(e,t){```
 var v = document.getElementById("v"); //DOM对象
 var $v = $(v); //jQuery 对象
 
@@ -1931,7 +1931,7 @@ $(document).ready(function(){
 })(jQuery);
 
 </script>
-```},iM2W:function(e,t,i){e.exports=i.p+"static/img/LDR_RGB1_0.5c13b86.png"},ir0C:function(e,t){```<div class="orderPayMain">
+```},iM2W:function(e,t,i){e.exports=i.p+"img/LDR_RGB1_0.5c13b86.png"},ir0C:function(e,t){```<div class="orderPayMain">
     <div class="orderPay_sec orderPay_sec1">
         <h2><img src="images/myConfirm.png"/><b>订单提交成功，现在只差最后一步啦！</b></h2>
         <h3>请您在提交订单后1小时00分内完成支付，否则订单会自动取消！</h3>
