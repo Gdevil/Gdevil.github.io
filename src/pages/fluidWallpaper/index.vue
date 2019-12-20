@@ -1,6 +1,6 @@
 <template>
   <div class="fullPage">
-    <canvas id="canv" style="opacity: 0.1"></canvas>
+    <canvas id="canv"></canvas>
   </div>
 </template>
 
