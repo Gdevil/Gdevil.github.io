@@ -1,11 +1,12 @@
 <template>
   <div class="fullPage">
-    <canvas></canvas>
+    <canvas id="canv" style="opacity: 0.1"></canvas>
   </div>
 </template>
 
 <script>
 import './dat.gui.min.js';
+import wallPaper from './script.js';
 
 
 export default {
@@ -17,13 +18,17 @@ export default {
       
     };
   },
-  created() {
+  // created() {
+  //   this.init()
+  // },
+  mounted() {
     this.init()
   },
   computed: {},
   methods: {
     init(){
-      import('./script.js');
+      // import('./script_old.js');
+      wallPaper.init()
     }
   }
 };
@@ -32,7 +37,7 @@ export default {
 <style lang='scss' scoped>
 .fullPage {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   canvas {
     width: 100%;
     height: 100%;

@@ -7,7 +7,7 @@
             <div class="effectBox">
               <el-row :gutter="20">
                 <el-col :span="8" v-for="item in list">
-                  <div class="item">
+                  <div class="item" @click="router(item.route)">
                     <div class="effect">
                       <div class="imgBox" :style="'background-image: url(' +item.img+ ')'"></div>
                       <div class="txtBox">
@@ -81,7 +81,8 @@ export default {
         {
           title: '流体墙纸',
           desc: '彩色染料滴入水中，慢慢消散，跟随指尖轻轻荡漾',
-          img: this.$assets.preview
+          img: this.$assets.preview,
+          route: 'FluidWallpaper'
         },
         // {
         //   title: '流体墙纸',
@@ -131,6 +132,9 @@ export default {
         stroll.bind( '#codeBox ul' );
       })
     },
+    router (name) {
+      this.$router.push({name})
+    },
     pay(price) {
       // this.$router.push({name: 'OrderPay', params: {price: price}})
     },
@@ -160,6 +164,7 @@ export default {
     threedee (e) {
       const steps = 7;
       const text = document.getElementById('text')
+      if(!text){return;}
       var x = Math.round(steps / (window.innerWidth / 2) * (window.innerWidth / 2 - e.clientX)),
         y = Math.round(steps / (window.innerHeight / 2) * (text.getBoundingClientRect().top - e.clientY)),
         shadow = '',
