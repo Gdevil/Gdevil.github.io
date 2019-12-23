@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Kay Stark - website",
   "author": "Kay Stark<229739687@qq.com>",
+  "homepage": "https://gdevil.github.io/dist",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
