@@ -28,7 +28,7 @@ export default {
   methods: {
     init(){
       // import('./script_old.js');
-      wallPaper.init()
+      wallPaper.init('canv')
     }
   }
 };

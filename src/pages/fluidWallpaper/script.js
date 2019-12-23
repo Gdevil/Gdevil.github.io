@@ -86,10 +86,10 @@ class fluidWallPaper {
         }
     }
 
-    init(){
+    init(id){
         // this.canvas = document.getElementsByTagName('canvas')[0];
-        this.canvas = document.getElementById('canv')
-        console.log(this.canvas)
+        this.canvas = document.getElementById(id)
+        // console.log(this.canvas)
         this.canvas.width = this.canvas.clientWidth;
         this.canvas.height = this.canvas.clientHeight;
 
