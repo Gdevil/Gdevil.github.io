@@ -72,4 +72,10 @@ ul {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.absoluteBackHome {
+  position: fixed;
+  top:10px;
+  left: 10px;
+  z-index: 9;
+}
 </style>

@@ -47,7 +47,11 @@
               </el-col>
               <el-col :span="12">
                 <div class="markdown">
-                  <mavon-editor class="mavonEditor" :toolbars="{}" :toolbarsFlag="false" v-model="codeMsg" :defaultOpen="'preview'" :subfield="false" :editable="false"/>
+                  <mavon-editor v-if="codeMsg" class="mavonEditor" :toolbars="{}" :toolbarsFlag="false" v-model="codeMsg" :defaultOpen="'preview'" :subfield="false" :editable="false"/>
+                  <div v-else class="mavonEmpty">
+                    <i class="iconfont icon-wenjian"></i>
+                    <p>空空的</p>
+                  </div>
                 </div>
               </el-col>
             </el-row>
@@ -80,15 +84,22 @@ export default {
       list: [
         {
           title: '流体墙纸',
-          desc: '彩色染料滴入水中，慢慢消散，跟随指尖轻轻荡漾',
+          desc: '救救我！我掉染缸里了！司马光呢？',
           img: this.$assets.preview,
           route: 'FluidWallpaper'
         },
-        // {
-        //   title: '流体墙纸',
-        //   desc: '彩色染料滴入水中，慢慢消散，跟随指尖轻轻荡漾',
-        //   img: this.$assets.preview
-        // },
+        {
+          title: '3D照片墙',
+          desc: '伪3D也算是3D？好看就行了呗',
+          img: this.$assets.threeDphoto,
+          route: 'ThreeDPhotos'
+        },
+        {
+          title: '100种切换效果',
+          desc: '真的有100种吗？反正我没数过',
+          img: this.$assets.photoSwitcher,
+          route: 'ImageSwitchers'
+        },
         
       ],
       codeList: [],
@@ -305,7 +316,7 @@ export default {
           transform: rotate3d(0,0,1,45deg) scale3d(1.2,1.2,1.2)
         };
         .imgBox {
-          opacity: .5;
+          opacity: .2;
           -webkit-transform: scale3d(1.05,1.05,1);
           transform: scale3d(1.05,1.05,1)
         }
@@ -377,6 +388,24 @@ export default {
     .mavonEditor {
       width: 100%;
       height: 100%;
+    }
+    .mavonEmpty {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+      opacity: 0.5;
+      border-radius: 2px;
+      i {
+        font-size: 40px;
+        color: #aaa;
+      }
+      p {
+        margin: 10px 0 0;
+        color: #666;
+      }
     }
   }
 }

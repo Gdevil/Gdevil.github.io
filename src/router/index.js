@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '../pages/index';
-import FluidWallpaper from '../pages/fluidWallpaper'
+import FluidWallpaper from '../pages/specialEffects/fluidWallpaper'
+import ThreeDPhotos from '../pages/specialEffects/3D_photos'
+import ImageSwitchers from '../pages/specialEffects/imageSwitchers'
 
 Vue.use(Router);
 
@@ -24,6 +26,22 @@ const router =  new Router({
         title: '流体墙纸'
       },
       component: FluidWallpaper
+    },
+    {
+      path: '/3D_photos',
+      name: 'ThreeDPhotos',
+      meta: {
+        title: '3D 照片墙'
+      },
+      component: ThreeDPhotos
+    },
+    {
+      path: '/imageSwitchers',
+      name: 'ImageSwitchers',
+      meta: {
+        title: '100种图片切换效果'
+      },
+      component: ImageSwitchers
     }
   ]
 });

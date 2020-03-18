@@ -1,5 +1,6 @@
 <template>
   <div class="fullPage">
+    <a class="absoluteBackHome" href="/"><el-button  round icon="el-icon-s-home"></el-button></a>
     <canvas id="canv"></canvas>
   </div>
 </template>

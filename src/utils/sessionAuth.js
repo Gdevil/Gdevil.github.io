@@ -40,17 +40,17 @@ export class User {
     localStorage.setItem('token', token);
   }
 
-  async getUserInfo() {
-    const res = await apiClient.base.member({},{skipError: true})
-    if(res.status == 10000) {
-      observeSession.emmit('userInfoObserve', 1)
-      localStorage.setItem('avatar', res.body.avatar);
-      localStorage.setItem('nickname', res.body.nickname);
-    }else {
-      window.setSessionStorage && window.setSessionStorage('login', 'logout');
-      this.logout;
-    }
-  }
+  // async getUserInfo() {
+  //   const res = await apiClient.base.member({},{skipError: true})
+  //   if(res.status == 10000) {
+  //     observeSession.emmit('userInfoObserve', 1)
+  //     localStorage.setItem('avatar', res.body.avatar);
+  //     localStorage.setItem('nickname', res.body.nickname);
+  //   }else {
+  //     window.setSessionStorage && window.setSessionStorage('login', 'logout');
+  //     this.logout;
+  //   }
+  // }
 }
 
 export default function useAuthorize() {
