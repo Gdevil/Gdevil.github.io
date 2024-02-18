@@ -1,1 +1,0 @@
-`<a onclick="javascript:location.href='join.xls'">下载加盟申请表格→</a>`
